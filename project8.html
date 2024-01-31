@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codehelp</title>
+    <link rel="shortcut icon" href="codehelp.png" type="image/x-icon">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .bodyc{
+            background-color: beige;
+            height: 100%;
+            width: 100%;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .header{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header p{
+            font-size: 1.1rem;
+            width: 40%;
+            text-align: center;
+            color: grey;
+        }
+        .container{
+            height: 95%;
+            width: 100%;
+            position: relative;
+            top: 40px;
+            left: 20px;
+            display: grid;
+            row-gap: 40px;
+            grid-template-rows: repeat(2,1fr);
+            grid-template-columns: repeat(4,1fr);
+            padding: 30px;
+        }
+        .items{
+            /* background-color: black;
+            border: solid 2px red; */
+            height: 320px;
+            width: 250px;
+         box-shadow: 0px 0px 15px rgba(128, 128, 128, 0.507);
+         border-radius: 10px;
+         justify-self: center;
+         overflow: hidden;
+        }
+        .imgbox{
+            height: 55%;
+            width: 100%;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            overflow: hidden;
+        }
+        .imgbox img{
+            height: 100%;
+            width: 100%;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+        .items:hover .imgbox{
+            transform: scale(1.1);
+            transition-duration: 200ms;
+        }
+        .imgheader{
+            padding: 15px;
+        }
+        .imgheader h2{
+            position: relative;
+        }
+        .imgheader p{
+            position: relative;
+            font-size: 0.8rem;
+            color: grey;
+            width: 100%;
+        }
+        .imginfo{
+            height: 15%;
+            width: 100%;
+           display: flex;
+        }
+        .imginfo img{
+            height: 70%;
+            width: 15%;
+        }
+        .author{
+            font-size: 0.8rem;
+            position: relative;
+            top: 7px;
+        }
+        .author a{
+            text-decoration: none;
+            color: rgb(17, 17, 232);
+        }
+        .author p{
+            position: relative;
+            top: 3px;
+            font-size: 0.7rem;
+            color: grey;
+        }
+        .technology{
+            padding: 5px;
+            height: 60%;
+            width: 35%;
+            position: relative;
+            top: 7px;
+            font-size: 0.9rem;
+            border: solid 2px rgba(128, 128, 128, 0.541);
+            left:45px;
+            text-align: center;
+            color:rgba(0, 0, 255, 0.836)
+        }
+        .technology a{
+            text-decoration: none;
+            color: blue;
+        }
+       @media(max-width:1111px){
+        .container{
+            grid-template-columns: repeat(2,1fr);
+        }
+       }
+       @media(max-width:625px){
+        .container{
+            grid-template-columns: repeat(1,1fr);
+        }
+       }
+    </style>
+</head>
+<body class="bodyc">
+    <div class="header"><h1>Codehelp Blogs</h1>
+    <p> Utilize this space to incorporate a captivating subheading crafted by ChatGPT, adding depth and intrigue to your blog.</p></div>
+   <div class="container">
+    <div class="items">
+        <div class="imgbox">
+            <img src="https://source.unsplash.com/random/600×400?technology " alt="click">
+        </div>
+        <div class="imgheader">
+            <h2>New Gadgets</h2>
+            <p>Check out the latest tech gadgets hitting the market, from smartphones to smartwatches.</p>
+        </div>
+        <div class="imginfo">
+            <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" alt="click">
+            <div class="author">
+                <a href="https://www.linkedin.com/in/sachin-kumar-singh-59a65b266/">Sachin Singh</a>
+            <p>January 21,2024</p></div>
+            <div class="technology"><a href="https://thegadgetflow.com/portfolio/category/tech-gadgets/">Technology</a></div>
+        </div>
+    </div>
+    <div class="items">
+        <div class="imgbox">
+            <img src="https://source.unsplash.com/random/600×400?nutrition " alt="click">
+        </div>
+        <div class="imgheader">
+            <h2>Healthy Eating Tips</h2>
+            <p>Healthy eating emphasizes fruits, vegetables, whole grains, dairy, and protein. </p>
+        </div>
+        <div class="imginfo">
+            <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" alt="click">
+            <div class="author">
+                <a href="https://www.linkedin.com/in/sachin-kumar-singh-59a65b266/">Sachin Singh</a>
+            <p>January 22,2024</p></div>
+            <div class="technology"><a href="https://www.nhs.uk/live-well/eat-well/how-to-eat-a-balanced-diet/eight-tips-for-healthy-eating/">Nutrition</a></div>
+        </div>
+    </div>
+    <div class="items">
+        <div class="imgbox">
+            <img src="https://source.unsplash.com/random/600×400?Travel " alt="click">
+        </div>
+        <div class="imgheader">
+            <h2> Travel Bucket List</h2>
+            <p>Are you looking for travel bucket list ideas for your next trip?</p>
+        </div>
+        <div class="imginfo">
+            <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" alt="click">
+            <div class="author">
+                <a href="https://www.linkedin.com/in/sachin-kumar-singh-59a65b266/">Sachin Singh</a>
+            <p>January 23,2024</p></div>
+            <div class="technology"><a href="https://www.touropia.com/best-places-to-visit-in-india/">Travel</a></div>
+        </div>
+    </div>
+    <div class="items">
+        <div class="imgbox">
+            <img src="https://source.unsplash.com/random/600×400?productivity " alt="click">
+        </div>
+        <div class="imgheader">
+            <h2>Time Management</h2>
+            <p>Get it right, and you'll end up working smarter, not harder, to get more done in less time.</p>
+        </div>
+        <div class="imginfo">
+            <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" alt="click">
+            <div class="author">
+                <a href="https://www.linkedin.com/in/sachin-kumar-singh-59a65b266/">Sachin Singh</a>
+            <p>January 24,2024</p></div>
+            <div class="technology"><a href="https://www.mindtools.com/arb6j5a/what-is-time-management">Punctual</a></div>
+        </div>
+    </div>
+    <div class="items">
+        <div class="imgbox">
+            <img src="https://source.unsplash.com/random/600×400?mindfulness " alt="click">
+        </div>
+        <div class="imgheader">
+            <h2>Art of Mindfulness</h2>
+            <p>Mindfulness is a type of meditation in which you focus on being intensely aware and living in the moment.</p>
+        </div>
+        <div class="imginfo">
+            <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" alt="click">
+            <div class="author">
+                <a href="https://www.linkedin.com/in/sachin-kumar-singh-59a65b266/">Sachin Singh</a>
+            <p>January 25,2024</p></div>
+            <div class="technology"><a href="https://www.mayoclinic.org/healthy-lifestyle/consumer-health/in-depth/mindfulness-exercises/art-20046356#:~:text=Mindfulness%20is%20a%20type%20of,mind%20and%20help%20reduce%20stress.">Mindful</a></div>
+        </div>
+    </div>
+    <div class="items">
+        <div class="imgbox">
+            <img src="https://source.unsplash.com/random/600×400?homedecor " alt="click">
+        </div>
+        <div class="imgheader">
+            <h2>Sachin Home Decor</h2>
+            <p>Buy Chandeliers From India's Largest Decorative Lighting Store. Upto 50% Off on Selected Products.</p>
+        </div>
+        <div class="imginfo">
+            <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" alt="click">
+            <div class="author">
+                <a href="https://www.linkedin.com/in/sachin-kumar-singh-59a65b266/">Sachin Singh</a>
+            <p>January 26,2024</p></div>
+            <div class="technology"><a href="https://www.pepperfry.com/category/home-decor.html">Home Decor</a></div>
+        </div>
+    </div>
+    <div class="items">
+        <div class="imgbox">
+            <img src="https://source.unsplash.com/random/600×400?sustainibility " alt="click">
+        </div>
+        <div class="imgheader">
+            <h2>Green Energy</h2>
+            <p>Green energy is any energy type that is generated from natural resources, such as sunlight, wind or water.</p>
+        </div>
+        <div class="imginfo">
+            <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" alt="click">
+            <div class="author">
+                <a href="https://www.linkedin.com/in/sachin-kumar-singh-59a65b266/">Sachin Singh</a>
+            <p>January 27,2024</p></div>
+            <div class="technology"><a href="https://www.nationalgrid.com/stories/energy-explained/what-is-green-energy">Sustainibilty</a></div>
+        </div>
+    </div>
+    <div class="items">
+        <div class="imgbox">
+            <img src="https://source.unsplash.com/random/600×400?positivity " alt="click">
+        </div>
+        <div class="imgheader">
+            <h2>Positive Energy</h2>
+            <p>Positive thinking helps with stress management and can even improve your health.</p>
+        </div>
+        <div class="imginfo">
+            <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" alt="click">
+            <div class="author">
+                <a href="https://www.linkedin.com/in/sachin-kumar-singh-59a65b266/">Sachin Singh</a>
+            <p>January 28,2024</p></div>
+            <div class="technology"><a href="https://www.hopkinsmedicine.org/health/wellness-and-prevention/the-power-of-positive-thinking">Positivity</a></div>
+        </div>
+    </div>
+   </div> 
+</body>
+</html>
+<!-- https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64
+https://source.unsplash.com/random/600×400?healthy  -->
