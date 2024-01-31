@@ -103,8 +103,8 @@ body{
     flex-direction: column;
     gap: 20px;
     animation-name: ani;
-    animation-duration: 2s;
-    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-delay: 0.7s;
     animation-timing-function: linear;
     animation-iteration-count: 1;
 }
@@ -244,8 +244,8 @@ body{
     left: 420px;
     background-color: rgba(199, 197, 197, 0.299);
     animation-name: anii;
-    animation-duration: 2s;
-    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-delay: 0.7s;
     animation-timing-function: linear;
 }
 @keyframes anii {
@@ -271,8 +271,8 @@ body{
     font-size: 1.5rem;
     font-weight: 700;
     animation-name: aniii;
-    animation-duration: 2s;
-    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-delay: 0.7s;
     animation-timing-function: linear;
 }
 @keyframes aniii {
