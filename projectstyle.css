@@ -13,7 +13,7 @@
 }
 body{
     height: 2950px;
-    width: 1496px;
+  overflow-x:hidden;
 }
 .container{
     height: 930px;
